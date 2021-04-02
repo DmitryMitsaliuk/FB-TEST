@@ -18,4 +18,5 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## Application example
-![Employee List](https://prnt.sc/112bhdz)
+### Employee List
+![Employee List](https://user-images.githubusercontent.com/18738106/113416059-2ac20500-93c9-11eb-89d8-534aebb3b759.png)
