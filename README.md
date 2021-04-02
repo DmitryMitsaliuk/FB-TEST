@@ -18,4 +18,4 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## Application example
-![Employee List](https://prnt.sc/112bhdz.png)
+![Employee List](https://prnt.sc/112bhdz)
