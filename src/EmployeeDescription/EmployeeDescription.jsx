@@ -9,13 +9,11 @@ export const EmployeeDescription = ({firstName, lastName, avatar, email, country
               <img
                 src={avatar}
                 alt="Employee avatar thumbnail"
-                width={70}
-                height={70}
               />
               <div className="employee-avatar-information-container">
-                <span>{email}</span>
+                <a href={`mailto:${email}`}>{email}</a>
                 <span>{country}</span>
-                <span>{phone}</span>
+                <a href={`tel:${phone}`}>{phone}</a>
               </div>
             </div>
         </>

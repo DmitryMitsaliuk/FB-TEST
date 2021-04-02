@@ -4,18 +4,15 @@
 }
   
 .employee-avatar-container img {
-  padding-right: 20px;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50px;
 }
   
 .employee-avatar-information-container {
   display: flex;
   flex-direction: column;
-}
-
-.employee-avatar-information-container a:link {
-  text-decoration: none;
-}
-
-a {
-  color: black;
+  justify-content: center;
+  line-height: 1.6;
 }
