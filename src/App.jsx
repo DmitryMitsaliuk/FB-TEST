@@ -47,20 +47,3 @@ const App = () => {
 };
 
 export default App;
-
-// The employee have four different states including the following
-// - ADDED
-// - IN-CHECK
-// - APPROVED
-// - ACTIVE
-// - INACTIVE
-
-// Your task is to build a frontend application using React including the following features.
-
-// - A simple UI listing the employees
-//   The application need to use an API endpoint to retrieve the employee's list, Unfortunately the API endpoint isn't developed yet, We recommend using a tool to mock your API with the following specification :
-//   - GET /employees/
-//   - POST /employees/
-//   - PATCH /employees/{employee_id}
-
-// - In Every employee row, there should be a component as per the provided picture which will be used to display the current state of this employee and by clicking on another state e.g. APPROVED , it should persist that change to this given employee.
