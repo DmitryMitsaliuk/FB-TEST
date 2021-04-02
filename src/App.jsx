@@ -1,6 +1,7 @@
 import { React } from "react";
 import "./App.css";
 import { EmployeeStatusCard } from "./EmployeeCard/EmployeeStatusCard";
+import { EmployeeDescription } from "./EmployeeDescription/EmployeeDescription";
 import { EmployeeStatusProvider, useEmployeeStatus } from "./EmployeesContext";
 
 const EmployeeList = () => {
@@ -11,20 +12,14 @@ const EmployeeList = () => {
       {employees.map((employee, i) => {
         return (
           <div className="employee-container" key={i}>
-            <h3>{`${employee.name.first} ${employee.name.last}`}</h3>
-            <div className="employee-avatar-container">
-              <img
-                src={employee.picture.thumbnail}
-                alt="Employee avatar thumbnail"
-                width={70}
-                height={70}
-              />
-              <div className="employee-avatar-information-container">
-                <span>{employee.email}</span>
-                <span>{employee.location.country}</span>
-                <span>{employee.phone}</span>
-              </div>
-            </div>
+            <EmployeeDescription
+              firstName={employee.name.first}
+              lastName={employee.name.last}
+              avatar={employee.picture.thumbnail}
+              email={employee.email}
+              country={employee.location.country}
+              phone={employee.phone}
+            />
             <EmployeeStatusCard
               status={employee.status}
               id={employee.id.value}
