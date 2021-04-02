@@ -12,6 +12,7 @@ step-menu {
   padding: 15px 15px 15px 50px;
   position: relative;
   margin-left: 10px;
+  cursor: pointer;
 }
 .step-menu li:before {
   content: "";

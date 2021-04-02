@@ -1,14 +1,21 @@
 .employee-avatar-container {
-    display: flex;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-direction: row;
+}
   
-  .employee-avatar-container img {
-    padding-right: 20px;
-  }
+.employee-avatar-container img {
+  padding-right: 20px;
+}
   
-  .employee-avatar-information-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
+.employee-avatar-information-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-avatar-information-container a:link {
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
