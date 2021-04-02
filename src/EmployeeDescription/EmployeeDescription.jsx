@@ -11,9 +11,9 @@ export const EmployeeDescription = ({firstName, lastName, avatar, email, country
                 alt="Employee avatar thumbnail"
               />
               <div className="employee-avatar-information-container">
-                <a href={`mailto:${email}`}>{email}</a>
-                <span>{country}</span>
-                <a href={`tel:${phone}`}>{phone}</a>
+                <span>Email: <a href={`mailto:${email}`}>{email}</a></span> 
+                <span>Location: {country}</span>
+                <span>Phone: <a href={`tel:${phone}`}>{phone}</a></span>
               </div>
             </div>
         </>
