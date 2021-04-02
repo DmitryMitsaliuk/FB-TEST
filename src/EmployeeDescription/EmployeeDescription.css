@@ -1,0 +1,14 @@
+.employee-avatar-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .employee-avatar-container img {
+    padding-right: 20px;
+  }
+  
+  .employee-avatar-information-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
