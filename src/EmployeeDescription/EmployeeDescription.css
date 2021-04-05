@@ -18,3 +18,26 @@
   justify-content: center;
   line-height: 1.6;
 }
+
+.employee-avatar-information-container span {
+  font-weight: bold;
+}
+
+.employee-avatar-information-container span a {
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 1098px) {
+  .employee-avatar-container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .employee-avatar-container img {
+    margin: 0 auto;
+  }
+
+  .employee-avatar-information-container {
+    margin: 0 auto;
+  }
+}
