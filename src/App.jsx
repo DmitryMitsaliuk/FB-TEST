@@ -6,7 +6,7 @@ import { EmployeeStatusProvider, useEmployeeStatus } from "./EmployeesContext";
 
 const EmployeeList = () => {
   const { employees } = useEmployeeStatus();
-
+  
   return (
     <>
       {employees.map((employee, i) => {
@@ -19,6 +19,7 @@ const EmployeeList = () => {
               email={employee.email}
               country={employee.location.country}
               phone={employee.phone}
+              nat={employee.nat}
             />
             <EmployeeStatusCard
               status={employee.status}

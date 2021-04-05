@@ -1,7 +1,8 @@
 import React from "react";
+import getUnicodeFlagIcon from 'country-flag-icons/unicode'
 import "./EmployeeDescription.css"
 
-export const EmployeeDescription = ({firstName, lastName, avatar, email, country, phone}) => {
+export const EmployeeDescription = ({firstName, lastName, avatar, email, country, phone, nat}) => {
     return (
         <>
             <h3>{`${firstName} ${lastName}`}</h3>
@@ -12,7 +13,7 @@ export const EmployeeDescription = ({firstName, lastName, avatar, email, country
               />
               <div className="employee-avatar-information-container">
                 <span>Email: <a href={`mailto:${email}`}>{email}</a></span> 
-                <span>Location: {country}</span>
+                <span>Location: {country}{getUnicodeFlagIcon(nat)}</span>
                 <span>Phone: <a href={`tel:${phone}`}>{phone}</a></span>
               </div>
             </div>
