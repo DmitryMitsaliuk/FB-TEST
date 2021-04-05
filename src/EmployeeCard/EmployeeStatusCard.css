@@ -12,6 +12,7 @@ step-menu {
   padding: 15px 15px 15px 50px;
   position: relative;
   margin-left: 10px;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 .step-menu li:before {
@@ -32,7 +33,7 @@ step-menu {
 }
 .step-menu li:nth-child(1) {
   z-index: 600;
-  margin-left: 0;
+  margin-left: 10;
   padding-left: 30px;
 }
 .step-menu li:nth-child(2) {

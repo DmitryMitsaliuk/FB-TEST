@@ -11,7 +11,9 @@
   margin-bottom: 10px;
   padding-left: 20px;
   box-shadow: 2px 2px 5px gray;
-  width: 750px;
+  min-width: 420px;
+  max-width: 750px;
+  width: 68%;
   border-radius: 20px;
 }
 

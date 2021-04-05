@@ -1,6 +1,7 @@
 .employee-avatar-container {
   display: flex;
   flex-direction: row;
+  min-width:  420px;
 }
   
 .employee-avatar-container img {
@@ -8,6 +9,7 @@
   height: 100px;
   margin-right: 20px;
   border-radius: 50px;
+  margin-left: 10px;
 }
   
 .employee-avatar-information-container {
