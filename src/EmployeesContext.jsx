@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect, createContext } from "react";
+import axios from 'axios';
 
 const EmployeeStatusContext = createContext();
 
@@ -6,15 +7,11 @@ export const EmployeeStatusProvider = ({ children }) => {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    fetch("https://randomuser.me/api/?results=10")
-      .then((response) => response.json())
-      .then((data) => {
-        let fetchedEmployees = data.results;
-        fetchedEmployees.forEach((employee) => (employee.status = "ADDED"));
-        setEmployees(fetchedEmployees);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+    axios.get("http://localhost:3000/employees").then((response) => {
+      const fetchedEmployees = response?.data?.data;
+      setEmployees(fetchedEmployees);
+    }).catch((err) => console.error(err));
+  }, [])
 
   return (
     <EmployeeStatusContext.Provider value={{ employees, setEmployees }}>
