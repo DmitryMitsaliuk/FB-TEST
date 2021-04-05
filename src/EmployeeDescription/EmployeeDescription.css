@@ -27,10 +27,15 @@
   font-weight: normal;
 }
 
+.employee-avatar-information-container .normal-font {
+  font-weight: normal;
+}
+
 @media only screen and (max-width: 1098px) {
   .employee-avatar-container {
     flex-direction: column;
     margin: 0 auto;
+    padding: 10px 0;
   }
 
   .employee-avatar-container img {

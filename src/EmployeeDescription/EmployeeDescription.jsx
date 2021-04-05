@@ -13,7 +13,7 @@ export const EmployeeDescription = ({firstName, lastName, avatar, email, country
               />
               <div className="employee-avatar-information-container">
                 <span>Email: <a href={`mailto:${email}`}>{email}</a></span> 
-                <span>Location: {country}{getUnicodeFlagIcon(nat)}</span>
+                <span>Location: <span className="normal-font">{getUnicodeFlagIcon(nat)} {country}</span></span>
                 <span>Phone: <a href={`tel:${phone}`}>{phone}</a></span>
               </div>
             </div>
