@@ -4,7 +4,7 @@
 
 In the project directory run:
 
-### `npm`
+### `npm i`
 ## Available Scripts
 
 In the project directory, you can run:
